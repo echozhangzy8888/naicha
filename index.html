@@ -7,8 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="屌丝奶茶" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    
-
     <style type="text/css">
 
     </style>
@@ -40,11 +38,11 @@
                         <div class="r-txt">屌丝奶茶俱乐部</div>
                     </div>
                     <div class="banner">
-                        <div class="swiper-container">
+                        <div class="swiper-container" id="topad">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
                                 <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
                                 <div class="swiper-slide" style="background-image:url(images/7.jpg)"></div>
                                 <div class="swiper-slide" style="background-image:url(images/8.jpg)"></div>
                             </div>
@@ -53,22 +51,31 @@
                         </div>
                     </div>
                     <div class="section1">
+                        <p>一瓶茶饮一份情怀  共享丝滑香浓世界
+                            <br>自称“屌丝”并非自我设障来降低成功期望！
+                            <br> 缓解社会压力，信积极、阳光、勤奋的迎接生活，屌丝终将逆袭！</p>
+                        <div class="enty-btn">进入门店列表</div>
+                    </div>
+                    <div class="shopshow swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url(images/tg/shop-wx.png"></div>
+                            <div class="swiper-slide" style="background-image: url(images/tg/shop-meituan.png"></div>
+                            <div class="swiper-slide" style="background-image: url(images/tg/shop-elm.png"></div>
+                            <div class="swiper-slide" style="background-image: url(images/tg/shop-koubei.png"></div>
+             
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                     <div class="section1">
                         <p>从甜到咸， 你对咖啡配美食的体验将被刷新升级。
                             <br> 我们的创新， 来自你对咖啡对美食的不断追求！
                             <br> 饕（挑）餮（剔）客们， 准备好迎接这一波又一波升级美食吗？</p>
-
-                            <div class="enty-btn">进入门店列表</div>
+                        <div class="enty-btn">进入门店列表</div>
                     </div>
-                    <div class="section2" style="background-image: url(https://www.starbucks.com.cn/assets/img/resized/Starbucks-food-china-main-2-r-q100-m111111.jpg); height: 300px;">
-                        
-                    </div>
-                    <div class="section1">
-                        <p>从甜到咸， 你对咖啡配美食的体验将被刷新升级。
-                            <br> 我们的创新， 来自你对咖啡对美食的不断追求！
-                            <br> 饕（挑）餮（剔）客们， 准备好迎接这一波又一波升级美食吗？</p>
-
-                            <div class="enty-btn">进入门店列表</div>
-                    </div>
+                    <!-- <div class="section2" style="background-image: url(images/tg/img1.png); height: 300px;">
+                    </div> -->
+                   
                 </div>
                 <!-- /st-content-inner -->
             </div>
@@ -79,7 +86,7 @@
     <script src="dist/all.js"></script>
     <script src="dist/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#topad', {
         pagination: '.swiper-pagination',
         effect: 'coverflow',
         initialSlide: 2,
@@ -93,6 +100,14 @@
             modifier: 1,
             slideShadows: true
         }
+    });
+
+     var swiperShop = new Swiper('.shopshow', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
     });
     </script>
 </body>
