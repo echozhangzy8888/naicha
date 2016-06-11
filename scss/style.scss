@@ -1,0 +1,109 @@
+@import "normalize";
+@import "demo";
+@import "icons";
+@import "component";
+@import "swiper.min";
+
+body{
+     font-family: "Microsoft YaHei";
+}
+.top-fixed-menu {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/menu_icon.svg) no-repeat center center;
+    &:hover {
+        background: url(../images/menu_icon.svg) no-repeat center center;
+    }
+}
+
+.st-content-top {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    .navbar-brand {
+        padding: 10px 0;
+        display: block;
+        height: auto;
+    }
+    .logo {
+        width: 75px;
+        height: 75px;
+        transition: all 250ms ease-in-out;
+        margin: 0 auto;
+        display: block;
+    }
+    .r-txt {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-size: 16px;
+        color: #333;
+        line-height: 120%;
+        font-family: "Microsoft YaHei";
+    }
+}
+
+.banner {
+    height: 460px;
+    .swiper-container {
+        padding: 20px 0;
+        height: 440px;
+        .swiper-wrapper {
+            height: 400px;
+        }
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 38%;
+        height: 400px;
+        border: 2px solid #ccc;
+        &.swiper-slide-active {
+            margin-top: 46px;
+            height: 310px;
+        }
+    }
+    .swiper-pagination-bullets {
+        bottom: 0;
+    }
+}
+
+.section1 {
+    padding: 20px 0 35px;
+    text-align: center;
+    background: #f0f0f0;
+    p {
+        color: #000;
+        font-size: 20px;
+        line-height: 160%;
+        font-family: "Microsoft YaHei";
+    }
+    .enty-btn{
+        margin: 10px auto 0;
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color:#fff;
+        background:#aa8e64;
+    }
+}
+
+.section2{
+    
+    background:#fff;
+    text-align: center;
+    background-size:cover;
+    background-position:no-repeat;
+    font-size: 0;
+    line-height: 0;
+    img{
+        width: 100%;
+
+    }
+}

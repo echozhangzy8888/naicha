@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="屌丝奶茶" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="st-container" class="st-container">
+        <nav class="st-menu st-effect-1" id="menu-1">
+            <h2 class="icon icon-lab">屌丝奶茶</h2>
+            <ul>
+                <li><a class="icon icon-data" href="#">首页</a></li>
+                <li><a class="icon icon-location" href="#">新品推荐</a></li>
+                <li><a class="icon icon-study" href="#">关于我们</a></li>
+                <li><a class="icon icon-photo" href="#">订单分类</a></li>
+                <li><a class="icon icon-wallet" href="#">奶茶文化</a></li>
+                <li><a class="icon icon-wallet" href="#">分店信息</a></li>
+            </ul>
+        </nav>
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <div class="st-content">
+                <!-- this is the wrapper for the content -->
+                <div class="st-content-inner">
+                    <div id="st-trigger-effects">
+                        <button data-effect="st-effect-1" class="top-fixed-menu"></button>
+                    </div>
+                    <div class="st-content-top">
+                        <a class="navbar-brand" href="/cn"><img class="logo" alt="" src="images/logo.jpg"></a>
+                        <div class="r-txt">屌丝奶茶俱乐部</div>
+                    </div>
+                    <div class="banner">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/7.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/8.jpg)"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="section1">
+                        <p>从甜到咸， 你对咖啡配美食的体验将被刷新升级。
+                            <br> 我们的创新， 来自你对咖啡对美食的不断追求！
+                            <br> 饕（挑）餮（剔）客们， 准备好迎接这一波又一波升级美食吗？</p>
+
+                            <div class="enty-btn">进入门店列表</div>
+                    </div>
+                    <div class="section2" style="background-image: url(https://www.starbucks.com.cn/assets/img/resized/Starbucks-food-china-main-2-r-q100-m111111.jpg); height: 300px;">
+                        
+                    </div>
+                    <div class="section1">
+                        <p>从甜到咸， 你对咖啡配美食的体验将被刷新升级。
+                            <br> 我们的创新， 来自你对咖啡对美食的不断追求！
+                            <br> 饕（挑）餮（剔）客们， 准备好迎接这一波又一波升级美食吗？</p>
+
+                            <div class="enty-btn">进入门店列表</div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+    </div>
+    <script src="dist/all.js"></script>
+    <script src="dist/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        initialSlide: 2,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true
+        }
+    });
+    </script>
+</body>
+
+</html>
